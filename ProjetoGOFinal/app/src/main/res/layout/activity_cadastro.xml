@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Cadastro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/nomeCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/emailCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/senhaCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Senha"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/senhaConfCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirmar senha"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/idadeCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Idade"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/nascimentoCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Data de nascimento"
+                android:focusable="false" />
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/sexoCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/masculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Masculino"/>
+
+                <RadioButton
+                    android:id="@+id/feminino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feminino"
+                    android:checked="true"/>
+            </RadioGroup>
+            <Button
+                android:id="@+id/catastra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cadastrar"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

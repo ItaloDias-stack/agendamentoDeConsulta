@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmentos.FazerExame"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/usuarioExame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <Spinner
+                android:id="@+id/cidadeExame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+
+            <Spinner
+                android:id="@+id/hospitalExame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></Spinner>
+
+            <EditText
+                android:id="@+id/dataExame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Data da Exame" />
+
+            <EditText
+                android:id="@+id/horaExame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="Hora da Exame" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exame:"
+                android:textSize="20dp"/>
+
+            <RadioGroup
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/sexoCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/exameSangue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Exame de sangue"/>
+
+                    <RadioButton
+                        android:id="@+id/endoscopia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Endoscopia"
+                        android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/raioX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Raio X"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/tomografia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomografia"
+                    android:checked="true"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/marcar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Marcar Exame"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

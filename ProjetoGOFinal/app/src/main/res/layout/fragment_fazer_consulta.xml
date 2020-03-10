@@ -1,0 +1,87 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Fragmentos.FazerConsulta">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/usuarioConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+           <Spinner
+               android:id="@+id/cidadeConsulta"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </Spinner>
+
+
+            <Spinner
+                android:id="@+id/hospitalConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+            <EditText
+                android:id="@+id/dataConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:hint="Data da consulta"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/horaConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hora da consulta"
+                android:focusable="false"/>
+
+            <EditText
+                android:id="@+id/alturaConsulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Altura"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/pesoConsulta"
+                android:hint="Peso"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <EditText
+                android:id="@+id/alergiaConsulta"
+                android:hint="Alergia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:singleLine="true"/>
+
+            <Button
+                android:id="@+id/fazerConsulta"
+                android:text="Fazer Consulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
